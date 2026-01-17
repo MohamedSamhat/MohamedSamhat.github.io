@@ -1,3 +1,0 @@
-If you want to launch the website (Landing Page) on a new server using xampp, you can try and copy the xampp folder and put it directly in the C folder.
-Else if you want to set it up on your own you can find in the "LP.rar" and if to attach the SSL certificate you can find it in the 
-"CropVision SSL Certificate.rar"
