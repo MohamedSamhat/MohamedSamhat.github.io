@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>التقنية</title>
+    <link rel="icon" href="../img/icoColored.ico" type="image/x-icon" />
+    <style>
+        .hover-effect:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            transform: scale(1.01);
+            transition: 0.3s;
+        }
+
+        .hover-effect-card {
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+        
+        .hover-effect-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            border-color: rgba(44, 122, 63, 0.2);
+        }
+        
+        .btn-outline-primary {
+            border-color: #2c7a3f;
+            color: #2c7a3f;
+        }
+        
+        .btn-outline-primary:hover {
+            background-color: #2c7a3f;
+            color: white;
+        }
+
+        .bg-light-green {
+            background-color: #e8f5e9;
+        }
+        .text-dark-green {
+            color: #2e7d32;
+        }
+        .card {
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .icon-wrapper {
+            transition: all 0.3s ease;
+        }
+        .card:hover .icon-wrapper {
+            background-color: #2e7d32 !important;
+            color: white !important;
+        }
+
+        .feature-row {
+        transition: all 0.3s ease;
+        }
+        .feature-row:hover {
+            background-color: rgba(0, 0, 0, 0.02);
+            transform: translateX(5px);
+        }
+        .feature-icon-cell {
+            width: 80px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .icon-wrapper {
+            width: 50px;
+            height: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        .alert-light-warning {
+            background-color: rgba(255,193,7,0.1);
+            border-left: 3px solid #ffc107;
+        }
+        .bg-light-success {
+            background-color: rgba(40,167,69,0.1);
+        }
+        .bg-light-warning {
+            background-color: rgba(255,193,7,0.1);
+        }
+        .bg-light-primary {
+            background-color: rgba(13,110,253,0.1);
+        }
+
+        .card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .tech-badge {
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        .card:hover .tech-badge {
+            opacity: 1;
+        }
+        .list-group-item {
+            border-left: 0;
+            border-right: 0;
+            transition: background-color 0.2s;
+        }
+        .list-group-item:hover {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D5N89P2JWB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D5N89P2JWB');
+</script>
+
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #38e5ca;">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="../img/white_noSlogan.png" alt="Logo" style="height: 59px; width: 130px; vertical-align: middle; margin-right: 8px;">
+            </a>
+            <li class="nav-item dropdown d-block d-lg-none ms-auto me-5">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                    عربي
+                </a>
+                <ul class="dropdown-menu">
+                    <li><h6 class="dropdown-header">اختر اللغة</h6></li>
+                    <li><a class="dropdown-item active" href="#">العربية</a></li>
+                    <li><a class="dropdown-item" href="../en/Technology.html">English</a></li>
+                    <li><a class="dropdown-item" href="../fr/Technology.html">Français</a></li>
+                </ul>
+            </li>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link mx-3" href="index.html">الصفحة الرئيسية</a>
+                    <a class="nav-link mx-3" href="AboutUs.html">من نحن</a>
+                    <a class="nav-link mx-3" href="OurTeam.html">فريقنا</a>
+                    <a class="nav-link mx-3 active" aria-current="page" href="#">التقنية</a>
+                    <a class="nav-link mx-3" href="ContactUs.html">اتصل بنا</a>
+                    <li class="nav-item dropdown d-none d-lg-block">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            عربي
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><h6 class="dropdown-header">اختر اللغة</h6></li>
+                            <li><a class="dropdown-item active" href="#">العربية</a></li>
+                            <li><a class="dropdown-item" href="../en/Technology.html">English</a></li>
+                            <li><a class="dropdown-item" href="../fr/Technology.html">Français</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <div class="me-auto d-none d-xl-flex align-items-center text-end">
+                    <span class="fw-semibold ms-3" style="color: #1f7069;">
+                        سجّل للحصول على وصول مبكر وشاركنا رأيك!
+                    </span>
+                    <a class="btn" style="background-color: #1f7069; color: #fff; border-radius: 30px; padding: 6px 16px; font-weight: 500;" href="https://forms.gle/FxLNFkJJcRaMLRkS9">
+                        احصل على وصول مبكر
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mb-5 text-center pt-4">
+        <img src="../img/reportAR.png" 
+             class="img-fluid rounded-5 mx-auto d-block" 
+             style="max-height: 600px; width: auto;" 
+             alt="Programming Cover">
+    </div>
+
+    <div class="pt-1 container px-4">
+        <div class="card col-lg-12 col-md-6 mb-5 border-0"> 
+            <div class="d-flex gap-3 rounded-3 shadow-sm p-4 position-relative hover-effect-card"> 
+                <div class="text-primary mt-1"> 
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-cloud-upload"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M7 18a4.6 4.4 0 0 1 0 -9a5 4.5 0 0 1 11 2h1a3.5 3.5 0 0 1 0 7h-1" /><path d="M9 15l3 -3l3 3" /><path d="M12 12l0 9" /></svg>
+
+
+                </div>
+                
+                <div class="flex-grow-1">
+                    <h2 class="mb-2 fs-5 text-dark">مصادر إدخال متعددة</h2>
+                    <p class="mb-2 lh-base">ولضمان قدر أكبر من المرونة والشمول في رصد الظروف الزراعية، يعتمد المشروع على عدة مصادر لإدخال البيانات البصرية.</p>
+                    <p class="mb-3 lh-base fw-bold" style="color: #2c7a3f;">
+                        الفائدة: يؤدي تنويع مصادر الإدخال إلى تعزيز دقة التقييم وتوسيع التغطية وتمكين المزارعين من المساهمة بسهولة في مراقبة المحاصيل باستخدام الأدوات المتاحة لهم.
+                    </p>
+                    
+                    <a class="btn btn-outline-primary btn-sm rounded-pill px-3 py-1 align-self-start d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#propertyModal0">
+                        تعرف أكثر
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12h14"/><path d="M13 18l-6 -6"/><path d="M13 6l-6 6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-1 container px-4">
+        <div class="card col-lg-12 col-md-6 mb-5 border-0"> 
+            <div class="d-flex gap-3 rounded-3 shadow-sm p-4 position-relative hover-effect-card"> 
+                <div class="text-primary mt-1"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-drone"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10h4v4h-4z" /><path d="M10 10l-3.5 -3.5" /><path d="M9.96 6a3.5 3.5 0 1 0 -3.96 3.96" /><path d="M14 10l3.5 -3.5" /><path d="M18 9.96a3.5 3.5 0 1 0 -3.96 -3.96" /><path d="M14 14l3.5 3.5" /><path d="M14.04 18a3.5 3.5 0 1 0 3.96 -3.96" /><path d="M10 14l-3.5 3.5" /><path d="M6 14.04a3.5 3.5 0 1 0 3.96 3.96" />
+                    </svg>
+                </div>
+                
+                <div class="flex-grow-1">
+                    <h2 class="mb-2 fs-5 text-dark">الطائرات بدون طيار</h2>
+                    <p class="mb-2 lh-base">تستخدم لمراقبة المحاصيل من الأعلى باستخدام كاميرات عالية الدقة.</p>
+                    <p class="mb-3 lh-base fw-bold" style="color: #2c7a3f;">
+                        الفائدة: تساعد بشكل كبير في الكشف المبكر عن أمراض النباتات من خلال توفير تصوير منتظم وشامل للمناطق المزروعة بأكملها.
+                    </p>
+                    
+                    <a class="btn btn-outline-primary btn-sm rounded-pill px-3 py-1 align-self-start d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#propertyModal1">
+                        تعرف أكثر
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12h14"/><path d="M13 18l-6 -6"/><path d="M13 6l-6 6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-1 container px-4">
+        <div class="card col-lg-12 col-md-6 mb-5 border-0"> 
+            <div class="d-flex gap-3 rounded-3 shadow-sm p-4 position-relative hover-effect-card"> 
+                <div class="text-primary mt-1"> 
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-video"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 10l4.553 -2.276a1 1 0 0 1 1.447 .894v6.764a1 1 0 0 1 -1.447 .894l-4.553 -2.276v-4z" /><path d="M3 6m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" /></svg>
+                </div>
+                
+                <div class="flex-grow-1">
+                    <h2 class="mb-2 fs-5 text-dark">البث المباشر من الطائرات بدون طيار</h2>
+                    <p class="mb-2 lh-base">توفر الطائرات بدون طيار بثًا مباشرًا عالي الجودة من المزارع إلى خادم مركزي مزود بتقنيات الذكاء الاصطناعي.</p>
+                    <p class="mb-3 lh-base fw-bold" style="color: #2c7a3f;">
+                        الفائدة: يتم تحليل البث المباشر على الفور للكشف عن أي علامات لأمراض المحاصيل، مما يسمح بتقديم ملاحظات فورية مع صور وتقارير دقيقة في الوقت الفعلي، دون تدخل بشري مباشر.
+                    </p>
+                    
+                    <a class="btn btn-outline-primary btn-sm rounded-pill px-3 py-1 align-self-start d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#propertyModal2">
+                        تعرف أكثر
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12h14"/>
+                            <path d="M13 18l-6 -6"/>
+                            <path d="M13 6l-6 6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pt-1 container px-4">
+        <div class="card col-lg-12 col-md-6 mb-5 border-0"> 
+            <div class="d-flex gap-3 rounded-3 shadow-sm p-4 position-relative hover-effect-card"> 
+                <div class="text-primary mt-1"> 
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-ai"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 16v-6a2 2 0 1 1 4 0v6" /><path d="M8 13h4" /><path d="M16 8v8" /></svg>
+                </div>
+                
+                <div class="flex-grow-1">
+                    <h2 class="mb-2 fs-5 text-dark">الذكاء الاصطناعي (AI)</h2>
+                    <p class="mb-2 lh-base">نظام متقدم يحلل بدقة الصور ومقاطع الفيديو الواردة من الطائرات بدون طيار.</p>
+                    <p class="mb-3 lh-base fw-bold" style="color: #2c7a3f;">
+                        الفائدة: يمكنه اكتشاف العلامات المبكرة لأمراض النباتات من خلال تحليل أنماط الأوراق وألوانها ونسيجها. ثم يقوم النظام تلقائيًا بإنشاء تقارير مفصلة ودقيقة تساعد فريق الزراعة على اتخاذ قرارات علاجية سريعة ومستنيرة.
+                    </p>
+                    
+                    <a class="btn btn-outline-primary btn-sm rounded-pill px-3 py-1 align-self-start d-inline-flex align-items-center" data-bs-toggle="modal" data-bs-target="#propertyModal3">
+                        تعرف أكثر
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M5 12h14"/>
+                            <path d="M13 18l-6 -6"/>
+                            <path d="M13 6l-6 6"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="modal fade" id="propertyModal0" tabindex="-1" aria-labelledby="propertyModalLabe0" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+        
+        <div dir="ltr" class="modal-header">
+            <h1 class="modal-title fs-5" id="propertyModalLabe0">مصادر إدخال متعددة للرصد الزراعي</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        
+        <div class="modal-body">
+            <div class="text-center mb-3">
+                <img src="../img/p12qw.png" class="img-fluid" alt="IMG">
+            </div>
+            <p>
+            لضمان مرونة وشمولية أكبر في رصد الظروف الزراعية، يعتمد المشروع على مصادر متعددة لإدخال البيانات البصرية. تتكامل هذه الأساليب المتنوعة لتوفير نظرة شاملة على صحة المحاصيل، مما يُمكّن من اتخاذ قرارات أفضل وتنفيذ تدخلات في الوقت المناسب.
+            </p>
+            
+            <div class="container py-4">
+            <div class="row g-4">
+                
+                <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                    <div class="icon-wrapper bg-light-green text-dark-green rounded-circle mb-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                        <i class="fas fa-plane fa-lg"></i>
+                    </div>
+                    <h5 class="card-title text-dark-green">طائرات بدون طيار</h5>
+                    <p class="card-text"><strong>التصوير الجوي عالي الدقة ونقل البيانات في الوقت الفعلي</strong></p>
+                    <p>تحلق طائرات بدون طيار مزودة بكاميرات وأجهزة استشعار عالية الدقة فوق الحقول الزراعية بانتظام لالتقاط صور ومقاطع فيديو مفصلة. توفر هذه اللقطات الجوية رؤية شاملة للمحاصيل، وتغطي مساحات واسعة بسرعة ودقة.</p>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                    <div class="icon-wrapper bg-light-green text-dark-green rounded-circle mb-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                        <i class="fas fa-mobile-alt fa-lg"></i>
+                    </div>
+                    <h5 class="card-title text-dark-green">الهواتف المحمولة</h5>
+                    <p class="card-text"><strong>الإدخال البصري اليدوي من المزارعين وفرق الدعم الميداني</strong></p>
+                    <p>يستخدم المزارعون وعمال الحقول هواتفهم الذكية لالتقاط صور أو مقاطع فيديو للمحاصيل، خاصةً عند ملاحظة ظروف أو أعراض غير عادية في نباتات معينة. يُثري هذا الإدخال اليدوي قاعدة البيانات بملاحظات ميدانية.</p>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                    <div class="icon-wrapper bg-light-green text-dark-green rounded-circle mb-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px;">
+                        <i class="fas fa-file-video fa-lg"></i>
+                    </div>
+                    <h5 class="card-title text-dark-green">تحميل مقاطع الفيديو المسجلة مسبقًا</h5>
+                    <p class="card-text"><strong>تحليل البيانات المرئية الملتقطة سابقًا من مصادر مختلفة</strong></p>
+                    <p>يتيح النظام للمستخدمين تحميل مقاطع فيديو وصور مسجلة مسبقًا، جُمعت من مصادر أخرى، مثل رحلات الطائرات المسيرة السابقة، أو كاميرات المراقبة، أو استطلاعات الرأي التي أجرتها جهات خارجية. تُضيف هذه الميزة سياقًا تاريخيًا وبيانات إضافية لتحليل الاتجاهات.</p>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            </div>
+            </div>
+            
+            
+        
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="propertyModal1" tabindex="-1" aria-labelledby="propertyModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div dir="ltr" class="modal-header">
+                    <h1 class="modal-title fs-5" id="propertyModalLabel">تقنية المراقبة الجوية باستخدام الطائرات بدون طيار</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="text-center mb-3">
+                        <img src="../img/drone1.png" class="img-fluid" alt="IMG">
+                    </div>
+                    <h3>كيف تعمل هذه التقنية؟</h3>
+                    <p >تستخدم الطائرات بدون طيار كاميرات عالية الدقة وأجهزة استشعار متطورة لمراقبة المحاصيل الزراعية من الجو. تحلق هذه الطائرات فوق الحقول بانتظام، وتلتقط صورًا مفصلة لكل جزء من الأرض، مما يوفر بيانات مرئية تساعد في تحليل صحة النباتات.</p>
+                    <div class="container py-4">
+                        <div class="row g-4">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="icon-wrapper bg-light-green text-dark-green rounded-circle mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                                            <i class="fas fa-search-plus fa-lg"></i>
+                                        </div>
+                                        <h5 class="card-title text-dark-green">الكشف المبكر عن الأمراض</h5>
+                                        <p class="card-text">تكشف الصور الجوية عن تغيرات طفيفة في لون النبات أو شكله، مما يشير إلى المرض أو الإصابة بالآفات قبل أن تنتشر.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="icon-wrapper bg-light-green text-dark-green rounded-circle mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                                            <i class="fas fa-expand fa-lg"></i>
+                                        </div>
+                                        <h5 class="card-title text-dark-green">تغطية شاملة</h5>
+                                        <p class="card-text">يمكن للطائرات بدون طيار مسح مساحات كبيرة من الأراضي الزراعية بسرعة، بدقة أعلى من المراقبة الأرضية التقليدية.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="icon-wrapper bg-light-green text-dark-green rounded-circle mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                                            <i class="fas fa-clock fa-lg"></i>
+                                        </div>
+                                        <h5 class="card-title text-dark-green">توفير الوقت والعمالة</h5>
+                                        <p class="card-text">تزيل الحاجة إلى عمليات التفتيش الميداني اليدوي لكل نبات، مما يقلل من تكاليف العمالة ويحسن الكفاءة.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card h-100 border-0 shadow-sm">
+                                    <div class="card-body">
+                                        <div class="icon-wrapper bg-light-green text-dark-green rounded-circle mb-3" style="width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;">
+                                            <i class="fas fa-brain fa-lg"></i>
+                                        </div>
+                                        <h5 class="card-title text-dark-green">تحليل البيانات الذكي</h5>
+                                        <p class="card-text">يتم دمج الصور مع أنظمة الذكاء الاصطناعي لتوليد تقارير تلقائية عن المناطق المعرضة للخطر واقتراحات العلاج.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="propertyModal2" tabindex="-1" aria-labelledby="propertyModalLabe2" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div dir="ltr" class="modal-header">
+                    <h1 class="modal-title fs-5" id="propertyModalLabe2">مراقبة المحاصيل الحية مع الطائرات بدون طيار المدعومة بالذكاء الاصطناعي</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+            
+                <div class="modal-body">
+                    <div class="text-center mb-3">
+                        <img src="../img/live.png" class="img-fluid" alt="IMG">
+                    </div>
+                    <h3>كيف تعمل هذه التقنية؟</h3>
+                    <p >تقوم أنظمة الطائرات بدون طيار المتطورة لدينا ببث فيديو فائق الدقة مباشرة من حقولك إلى منصة تحليل الذكاء الاصطناعي المستندة إلى السحابة. يعالج النظام اللقطات في الوقت الفعلي، إطارًا بإطار، باستخدام خوارزميات رؤية حاسوبية مدربة خصيصًا للتطبيقات الزراعية.</p>
+                    <div class="container my-5">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-12">
+                                <div class="border-0 shadow-lg">
+                                    <div class="card-header bg-success text-white py-3">
+                                        <h3 class="mb-0 text-center"><i class="fas fa-star me-2"></i>المزايا الرئيسية</h3>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div>
+                                            <table class="table table-hover table-borderless mb-0">
+                                                <tbody>
+                                                    <tr class="feature-row">
+                                                        <td class="feature-icon-cell bg-light-success">
+                                                            <div class="icon-wrapper bg-success text-white rounded-circle">
+                                                                <i class="fas fa-binoculars"></i>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="text-success mb-2">رؤية فورية للحقل</h5>
+                                                            <ul class="list-unstyled mb-0 p-0">
+                                                                <li class="d-flex align-items-start mb-2">
+                                                                    <i class="fas fa-check-circle text-success ms-2 mt-1"></i>
+                                                                    <span>احصل على رؤية شاملة لعملية الزراعة بأكملها في أي وقت ومن أي مكان من خلال لوحة التحكم الآمنة لدينا</span>
+                                                                </li>
+                                                                <li class="d-flex align-items-start">
+                                                                    <i class="fas fa-check-circle text-success ms-2 ms-2 mt-1"></i>
+                                                                    <span>راقب حقول متعددة في وقت واحد مع إمكانية تخصيص زوايا الكاميرا</span>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr class="feature-row">
+                                                        <td class="feature-icon-cell bg-light-warning">
+                                                            <div class="icon-wrapper bg-warning text-white rounded-circle">
+                                                                <i class="fas fa-robot"></i>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="text-warning mb-2">الكشف عن التهديدات بالذكاء الاصطناعي</h5>
+                                                            <p class="mb-2"><strong>يقوم نظامنا تلقائيًا بتحديد:</strong></p>
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <div class="alert alert-light-warning mb-2 py-2">
+                                                                        <i class="fas fa-leaf ms-2 text-warning"></i> أعراض الأمراض المبكرة
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <div class="alert alert-light-warning mb-2 py-2">
+                                                                        <i class="fas fa-bug ms-2 text-warning"></i> تفشي الآفات
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                    <tr class="feature-row">
+                                                        <td class="feature-icon-cell bg-light-primary">
+                                                            <div class="icon-wrapper bg-primary text-white rounded-circle">
+                                                                <i class="fas fa-bell"></i>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <h5 class="text-primary mb-2">تنبيهات قابلة للتنفيذ في الوقت الفعلي</h5>
+                                                            <p class="mb-3"><strong>تلقي إشعارات فورية مع:</strong></p>
+                                                            <div class="d-flex flex-wrap gap-3">
+                                                                <span class="badge bg-primary bg-opacity-10 text-primary py-2 px-3">
+                                                                    <i class="fas fa-map-marker-alt ms-2"></i> تحديد مواقع المشاكل بدقة
+                                                                </span>
+                                                                <span class="badge bg-primary bg-opacity-10 text-primary py-2 px-3">
+                                                                    <i class="fas fa-exclamation-triangle ms-2"></i> تقييمات الخطورة
+                                                                </span>
+                                                                <span class="badge bg-primary bg-opacity-10 text-primary py-2 px-3">
+                                                                    <i class="fas fa-lightbulb ms-2"></i> إجراءات موصى بها
+                                                                </span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="propertyModal3" tabindex="-1" aria-labelledby="propertyModalLabe3" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div dir="ltr" class="modal-header">
+                    <h1 class="modal-title fs-5" id="propertyModalLabe3">نظام تحليل المحاصيل المتقدم بالذكاء الاصطناعي</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="text-center mb-3">
+                        <img src="../img/AI.png" class="img-fluid" alt="IMG">
+                    </div>
+                    <h3>كيف يعمل هذا النظام؟</h3>
+                    <p >يستخدم نظامنا أحدث خوارزميات الرؤية الحاسوبية وYOLOv8 لتحليل الصور ومقاطع الفيديو التي تلتقطها الطائرات بدون طيار بدقة. يفحص النظام كل ورقة نبات لاكتشاف التغيرات في:</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary ms-2"></i> أنماط الأوراق (تشوهات الشكل)</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary ms-2"></i> اختلافات اللون (بقع، اصفرار، ذبول)</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-primary ms-2"></i> اختلافات الملمس (جفاف، عفن، تلف الحشرات)</li>
+                    </ul>
+
+                    <div class="container py-5">
+                        <div class="row g-4">
+                            <div class="col-12 text-center mb-4">
+                                <h2 class="display-5 fw-bold text-success"><i class="fas fa-robot ms-2"></i>ميزات الزراعة المدعومة بالذكاء الاصطناعي</h2>
+                                <p class="lead">ثورة في مراقبة صحة المحاصيل باستخدام الرؤية الحاسوبية</p>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 border-success border-2">
+                                    <div class="card-header bg-success text-white">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-search-plus fa-2x ms-3"></i>
+                                            <h3 class="mb-0">الكشف المبكر عن الأمراض</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex align-items-start mb-3">
+                                            <div class="bg-success bg-opacity-10 p-2 rounded ms-3">
+                                                <i class="fas fa-bullseye text-success fa-lg"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">دقة عالية في الكشف</h5>
+                                                <p class="mb-0 text-muted">يكتشف الأمراض قبل ظهور الأعراض المرئية</p>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="d-flex align-items-start">
+                                            <div class="bg-success bg-opacity-10 p-2 rounded ms-3">
+                                                <i class="fas fa-tachometer-alt text-success fa-lg"></i>
+                                            </div>
+                                            <div>
+                                                <h5 class="mb-1">10,000 صورة/دقيقة</h5>
+                                                <p class="mb-0 text-muted">مدعوم بمعالجة YOLOv8 في الوقت الفعلي</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer bg-transparent">
+                                        <div class="tech-badge">
+                                            <span class="badge bg-dark ms-2">الرؤية الحاسوبية</span>
+                                            <span class="badge bg-dark">YOLOv8</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="card h-100 border-primary border-2">
+                                    <div class="card-header bg-primary text-white">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-file-alt fa-2x ms-3"></i>
+                                            <h3 class="mb-0">تقارير ذكية تلقائية</h3>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-map-marked-alt text-primary ms-3 fa-lg"></i>
+                                                <div>
+                                                    <h5 class="mb-1">رسم انتشار المرض</h5>
+                                                    <p class="mb-0 text-muted">خرائط بصرية تبرز مناطق انتشار المرض عبر حقولك</p>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-exclamation-triangle text-primary ms-3 fa-lg"></i>
+                                                <div>
+                                                    <h5 class="mb-1">تقييم الخطورة</h5>
+                                                    <p class="mb-0 text-muted">تصنيف المخاطر منخفض/متوسط/مرتفع</p>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-prescription-bottle-alt text-primary ms-3 fa-lg"></i>
+                                                <div>
+                                                    <h5 class="mb-1">توصيات العلاج</h5>
+                                                    <p class="mb-0 text-muted">خطط تدخل قائمة على الأسس العلمية</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer dir="ltr" class="text-white py-4 py-md-5" style="background-color: #1f7069;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="d-flex flex-column flex-md-row flex-wrap justify-content-center justify-content-md-between align-items-center gap-3">
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-envelope me-2"></i>
+                            <span>cropvision.ai@outlook.com</span>
+                        </div>
+                        
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-phone me-2"></i>
+                            <span>+961 76 917 710</span>
+                        </div>
+                        
+                        <div class="d-flex align-items-center text-center text-md-start">
+                            <i class="fas fa-map-marker-alt me-2"></i>
+                            <span>Wardaniyeh Lebanon - Islamic University of Lebanon</span>
+                        </div>
+                        
+                        <div class="d-flex gap-3 mt-3 mt-md-0">
+                            <a href="https://www.instagram.com/cropvision.ai/" class="text-white"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/cropvisionai/" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"crossorigin="anonymous"></script>
+</body>
+</html>
